@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="css/syle.css">
+</head>
+
+<body class="about">
+
+    <div class="bloco">
+        <div>
+            <a href="/index.html">
+                <h1>Galeria De Imagens</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="background-card">
+            <div class="card card1">
+                <div class="card-image"></div>
+                <div class="card-description">
+                    <p>Nome: Isabella Diogo</p>
+                    <p>Idade: 25 Anos</p>
+                    <p>Cidade: RJ/ Niterói</p>
+                    <p>Personalidade: Teimosa</p>
+                    
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="card-image"></div>
+                <div class="card-description">
+                    <p>Nome: Ryan Fukuta</p>
+                    <p>Idade: 23 Anos</p>
+                    <p>Cidade: SP/ Ribeirão Preto</p>
+                    <p>Personalidade: Onipotência</p>
+                    
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="card-image"></div>
+                <div class="card-description">
+                    <p>Nome: Felipe Oliveira</p>
+                    <p>Idade: 24 Anos</p>
+                    <p>Cidade: ES/ Vitória</p>
+                    <p>Personalidade: Falso</p>
+                   
+                </div>
+            </div>
+            <div class="card card4">
+                <div class="card-image"></div>
+                <div class="card-description">
+                    <p>Nome: Daniel Fraga</p>
+                    <p>Idade: 20 Anos</p>
+                    <p>Cidade: RJ/ Rio De Janeiro</p>
+                    <p>Personalidade: Simpático</p>
+                   
+                </div>
+            </div>
+            <div class="card card5">
+                <div class="card-image"></div>
+                <div class="card-description">
+                    <p>Nome: Raphael Gomez</p>
+                    <p>Idade: 23 Anos</p>
+                    <p>Cidade: RJ/ São Gonçalo</p>
+                    <p>Personalidade: Verdadeiro </p>
+                   
+                </div>
+            </div>
+            <div class="card card6">
+                <div class="card-image"></div>
+                <div class="card-description">
+                    <p>Nome: Daniel Passos</p>
+                    <p>Idade: 22 Anos</p>
+                    <p>Cidade: RJ/ Rio De Janeiro</p>
+                    <p>Personalidade: Silencioso</p>
+                    
+                </div>
+            </div>
+            <div class="card card7">
+                <div class="card-image"></div>
+                <div class="card-description">
+                    <p>Nome: Juliana Bianco</p>
+                    <p>Idade: 22 Anos</p>
+                    <p>Cidade: SP/ São Paulo</p>
+                    <p>Personalidade: Fresca</p>
+                    
+                </div>
+            </div>
+            <div class="card card8">
+                <div class="card-image"></div>
+                <div class="card-description">
+                    <p>Nome: Rafaela Luz</p>
+                    <p>Idade: 22 Anos</p>
+                    <p>Cidade: MG/ Belo Horizonte</p>
+                    <p>Personalidade: Estourada</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var parametro = window.location.search.substr(6);
+
+        var cards = document.getElementsByClassName("card");
+        var total = cards.length;
+        console.log(cards);
+
+        for (i = 1; i <= total; i++) {
+            if (i != parametro) {
+                document.getElementsByClassName("card" + i)[0].remove();
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
